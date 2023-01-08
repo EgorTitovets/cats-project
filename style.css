@@ -1,0 +1,132 @@
+.modal-wrapper {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 9;
+    background: rgb(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.spinner__info {
+    display: block;
+    padding-top: 5px;
+    color: rgb(129, 138, 145);
+    font-size: .9rem;
+}
+
+.spinner__animation {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-right: 3px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    border-left: 3px solid rgb(129, 138, 145);
+    animation: loading-spinner 0.5s infinite linear;
+}
+
+@keyframes loading-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.lds-roller {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #301934;
+}
+
+
+#btn {
+    border-color: rgba(0, 0, 0, 0.092);
+    border-width: 2px;
+}
+
+.text-center {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+        0px 0px 20px #b393d3;
+}
+
+.btn-success {
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    padding-top: 9px;
+    color: #a675b3;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    margin: 20px auto;
+    font: normal 17px arial;
+}
+
+.btn-Add:not(.active) {
+    box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #e6e2ea;
+    background-image: linear-gradient(#3b2751, #271739);
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+    height: 70px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.btn-Add:not(.active):hover,
+.btn-Add:not(.active):focus {
+    transition: color 200ms linear, text-shadow 500ms linear;
+    color: #fff;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+
+.btn-Add:not(:hover) {
+    transition: 0.6s;
+}
+
+.img_card_show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 33.333%;
+    object-fit: cover;
+}
+
+.custom-modal {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d584c6;
+}
